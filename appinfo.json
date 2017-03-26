@@ -1,0 +1,19 @@
+{
+  "uuid": "Blah?",
+  "shortName": "Tutorial-3-3",
+  "longName": "Tutorial-3-3",
+  "companyName": "Pebble",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "sdkVersion": 3,
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "Script": 0,
+    "Position": 1
+  },
+  "capabilities": [
+    "location"
+  ]
+}
