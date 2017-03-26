@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Pebble Prompter</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type = "text/css" href="../assets/css/main.css" />
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Pebble Prompter</h1>
+						<p>Speeches &nbsp;&bull;&nbsp; News &nbsp;&bull;&nbsp; Lectures</p>
+						<nav>
+							<ul>
+								<textarea name="styled-textarea" id="styled" onfocus="this.value=''; setbg('#00ff00');" onblur="setbg('white')" style="background: white;">Enter your speech here...</textarea>
+							</ul>
+						</nav>
+					</header>
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
