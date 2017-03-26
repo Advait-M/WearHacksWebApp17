@@ -82,7 +82,6 @@ protobuf==3.1.0.post1
 ptyprocess==0.5.1
 pyasn1==0.1.9
 pyasn1-modules==0.0.8
-PyAudio==0.2.11
 pybble==0.1
 pycrypto==2.6.1
 pydub==0.16.6
