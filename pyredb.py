@@ -51,17 +51,17 @@ class ForgetMeNot:
         if typeOfString == "Start Time" or typeOfString == "End Time":
             self.db.child(oldFirstName + " " + oldLastName).update({typeOfString : newString})
 
-    def getText(self):
-        # print((self.db.child("wait-no-more").get()).each())
-        # print(type(self.db))
-        # print((self.db.child("/").get()).each())
-        # for i in range(0, len(self.db)):
-        all_users = self.db.child("/").get()
-        masterList = []
-        for user in all_users.each():
-            text = (user.val())["curIndex"]
-        print(text)
-        return text
+##    def getText(self):
+##        # print((self.db.child("wait-no-more").get()).each())
+##        # print(type(self.db))
+##        # print((self.db.child("/").get()).each())
+##        # for i in range(0, len(self.db)):
+##        all_users = self.db.child("/").get()
+##        masterList = []
+##        for user in all_users.each():
+##            text = (user.val())["curIndex"]
+##        print(text)
+##        return text
 
     def streamHandler(self, post):
         event = post["event"]
@@ -76,6 +76,6 @@ if __name__ == "__main__":
     a.start()
     #ForgetMeNot().getText()
     a.editIndex(4)
-    
+    a.getText()
     a.addScript("asdasd")
     a.alert(False, "heee;sad")
