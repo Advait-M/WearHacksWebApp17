@@ -39,9 +39,13 @@ def submit_textarea():
     pyredb.ForgetMeNot().editScript(request.form['styled-textarea'])
     all_users = pyredb.ForgetMeNot().db.child("/").get()
     for user in all_users.each():
-        text = (user.val())["text"]
-        original = text
-        break
+        print(user.val())
+        try:
+            text = (user.val())["Script"]
+            original = text
+            break
+        except KeyError:
+            pass
     print("o")
     print(original)
     shutdown_server()
