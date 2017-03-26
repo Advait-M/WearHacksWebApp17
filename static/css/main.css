@@ -6,8 +6,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commsercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-	
 	textarea#styled {
 		width: 600px;
 		height: 120px;
@@ -25,6 +23,7 @@
 		transition: 200ms all ease;
 		border:none;
 		padding: 5px 5px;
+		background-color: #0090ff;
 		color: #0090ff;
 
 	}
